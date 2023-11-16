@@ -19,3 +19,6 @@ cleanup:
 
 fstop:
 	cd /home/danil/Flink/flink-1.18.0 && ./bin/stop-cluster.sh
+
+sqlserver:
+	 docker-compose exec sqlserver sh

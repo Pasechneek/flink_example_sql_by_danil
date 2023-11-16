@@ -11,7 +11,8 @@ make 2
 make 3
 
 Then, check interfaces:
-http://localhost:8081/#/overview
+http://localhost:8081/ - flink
+http://localhost:5601/ - kibana
 
 
 Then insert data into tables:
