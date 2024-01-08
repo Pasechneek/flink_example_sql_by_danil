@@ -6,19 +6,27 @@ Please check your docker, docker-compose, java installation.
 Check Makefile. 
 According to documentation https://ververica.github.io/flink-cdc-connectors/master/content/quickstart/mysql-postgres-tutorial.html
 
-**Start project**
+**How to start the project**
+
+
 *cd* into project folder.
-Then, using Makefile (ypu also could use sh-scripts) put these commandt in different trminal vindow:
+
+
+Then, using Makefile  put these commandt in different trminal vindow:
+
 make 1
 make 2 
 make 3
+
+You also could use .sh scripts.
+
 
 Then, check interfaces:
 http://localhost:8081/ - flink
 http://localhost:5601/ - kibana
 
 
-Then insert data into tables:
+Then insert data into:
 
 -- MySQL
 
@@ -78,6 +86,8 @@ ALTER TABLE public.shipments REPLICA IDENTITY FULL;
 
 INSERT INTO shipments
 VALUES (default,10001,'Beijing','Shanghai',false), (default,10002,'Hangzhou','Shanghai',false), (default,10003,'Shanghai','Hangzhou',false);
+
+
 
 
 
