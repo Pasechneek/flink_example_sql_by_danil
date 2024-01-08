@@ -1,11 +1,14 @@
 
+It rquires flink client (v.1.18) installed (for example: into /opt/Flink directory) and add Flinks bin/ directory added in $PATH. 
+You can take flink client (with some connectors) here: https://disk.yandex.ru/d/Zg1AbWEjOEjRLg
 
 Please check your docker, docker-compose, java installation.
 Check Makefile. 
 According to documentation https://ververica.github.io/flink-cdc-connectors/master/content/quickstart/mysql-postgres-tutorial.html
 
-Start project - make up
-Then, run following steps in different terminal windows:
+**Start project**
+*cd* into project folder.
+Then, using Makefile (ypu also could use sh-scripts) put these commandt in different trminal vindow:
 make 1
 make 2 
 make 3

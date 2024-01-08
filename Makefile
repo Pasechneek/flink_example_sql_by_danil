@@ -1,8 +1,6 @@
-up:
-	docker-compose up -d
-
 1:
-	cd /home/danil/Flink/flink-1.18.0 && ./bin/start-cluster.sh && ./bin/sql-client.sh
+	docker-compose up -d
+	./start-cluster.sh && ./sql-client.sh
 
 2:
 	docker-compose exec postgres psql -h localhost -U postgres
@@ -12,13 +10,10 @@ up:
 
 down:
 	docker-compose down
-	cd /home/danil/Flink/flink-1.18.0 && ./bin/stop-cluster.sh
+	./stop-cluster.sh
 
-cleanup:
+rmall:
 	docker-compose down --rmi all
 
 fstop:
-	cd /home/danil/Flink/flink-1.18.0 && ./bin/stop-cluster.sh
-
-sqlserver:
-	 docker-compose exec sqlserver sh
+	./stop-cluster.sh
